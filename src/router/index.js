@@ -13,29 +13,35 @@ import Xmy from '../components/xmy.vue'
 
 Vue.use(VueRouter)
 
-const routes = [
-    {
-      path:"/detail",
-      component:()=>import("@/views/detail")
+const routes = [{
+        path: "/detail",
+        component: () =>
+            import ("@/views/detail")
     },
-  {
-    path: '/lhy',
-    component: Lhy
-  },
-  {
-    path: '/xmy',
-    component: Xmy
-  },
-  {
-    path:"/zpssss",
-    component:()=>import("@/views/zpssss")
-  },
+    {
+        path: '/lhy',
+        component: Lhy
+    },
+    {
+        path: '/xmy',
+        component: Xmy
+    },
+    {
+        path: "/zpssss",
+        component: () =>
+            import ("@/views/zpssss")
+    },
+    {
+        path: "/renovation",
+        component: () =>
+            import ("@/views/renovation")
+    },
 ]
 
 const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
-  routes
+    mode: 'history',
+    base: process.env.BASE_URL,
+    routes
 })
 
 export default router
