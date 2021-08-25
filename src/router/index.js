@@ -10,18 +10,27 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Lhy from '../components/lhy.vue'
 import Xmy from '../components/xmy.vue'
+import Header from '../components/header.vue'
 
 Vue.use(VueRouter)
 
-const routes = [{
+const routes = [
+    {
         path: "/detail",
-        component: () =>
-            import ("@/views/detail")
+        component: () => import ("@/views/detail")
+    },
+    {
+        path: "/xmy2",
+        component: () => import ("@/components/Xmy2")
     },
     {
         path: '/lhy',
         component: Lhy
     },
+	{
+	    path: '/header',
+	    component: Header
+	},
     {
         path: '/xmy',
         component: Xmy
