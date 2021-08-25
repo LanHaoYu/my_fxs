@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-08-25 08:28:55
+ * @LastEditTime: 2021-08-25 08:32:13
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \my_fxs\src\router\index.js
+ */
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Lhy from '../components/lhy.vue'
@@ -17,7 +25,11 @@ const routes = [
   {
     path: '/xmy',
     component: Xmy
-  }
+  },
+  {
+    path:"/zpssss",
+    component:()=>import("@/views/zpssss")
+  },
 ]
 
 const router = new VueRouter({
