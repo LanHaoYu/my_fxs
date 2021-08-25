@@ -13,10 +13,14 @@ import Xmy from '../components/xmy.vue'
 
 Vue.use(VueRouter)
 
-const routes = [{
+const routes = [
+    {
         path: "/detail",
-        component: () =>
-            import ("@/views/detail")
+        component: () => import ("@/views/detail")
+    },
+    {
+        path: "/xmy2",
+        component: () => import ("@/components/Xmy2")
     },
     {
         path: '/lhy',
