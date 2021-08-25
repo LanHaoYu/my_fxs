@@ -36,6 +36,12 @@ const routes = [{
         component: () =>
             import ("@/views/renovation")
     },
+
+    {
+        path: "/lx",
+        component: () =>
+            import ("../components/lx.vue")
+    },
 ]
 
 const router = new VueRouter({
